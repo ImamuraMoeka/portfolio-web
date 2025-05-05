@@ -14,7 +14,7 @@ export const SkillsTab: FC = () => {
   const languages: { name: string; level: number }[] = [
     { name: "English", level: 10 },
     { name: "Japanese", level: 100 },
-    { name: "Spanish", level: 40 },
+    { name: "Spanish", level: 30 },
   ];
 
   const tools: string[] = [

@@ -3,7 +3,7 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../elements";
 import { ExperienceTab } from "./tabs/experienceTab";
 import { SkillsTab } from "./tabs/skillsTab";
-// import { EducationTab } from "./tabs/EducationTab"
+import { EducationTab } from "./tabs/EducationTab";
 // import { PersonalTab } from "./tabs/PersonalTab"
 
 export function AboutTabs() {
@@ -23,7 +23,7 @@ export function AboutTabs() {
         <TabsContent value="skills">
           <SkillsTab />
         </TabsContent>
-        <TabsContent value="education">{/* <EducationTab /> */}</TabsContent>
+        <TabsContent value="education">{<EducationTab />}</TabsContent>
         <TabsContent value="personal">{/* <PersonalTab /> */}</TabsContent>
       </Tabs>
     </section>
