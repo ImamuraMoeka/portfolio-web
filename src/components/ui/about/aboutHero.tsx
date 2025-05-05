@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 import {
   Calendar,
   Clock,
@@ -11,9 +11,9 @@ import {
   Mail,
   MapPin,
   Twitter,
-} from "lucide-react"
-import { Button } from "@/components/ui/elements"
-import { JSX } from "react"
+} from "lucide-react";
+import { Button } from "@/components/ui/elements";
+import { JSX } from "react";
 
 export function AboutHero(): JSX.Element {
   return (
@@ -45,12 +45,17 @@ export function AboutHero(): JSX.Element {
               <span>Currently in: Bali</span>
             </div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">Your Name</h1>
-          <p className="text-xl text-rose-500 font-medium">Freelance Frontend Developer</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+            Your Name
+          </h1>
+          <p className="text-xl text-rose-500 font-medium">
+            Freelance Frontend Developer
+          </p>
           <p className="text-gray-600">
-            I&apos;m a cheerful and energetic developer with a passion for creating beautiful, functional
-            websites and applications. As a digital nomad, I work from various locations around the
-            world, bringing a global perspective to every project I undertake.
+            I&apos;m a cheerful and energetic developer with a passion for
+            creating beautiful, functional websites and applications. As a
+            digital nomad, I work from various locations around the world,
+            bringing a global perspective to every project I undertake.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
@@ -66,7 +71,8 @@ export function AboutHero(): JSX.Element {
             <div className="flex items-center gap-2">
               <Clock className="h-5 w-5 text-rose-500" />
               <span>
-                Availability: <span className="font-medium">Open to new projects</span>
+                Availability:{" "}
+                <span className="font-medium">Open to new projects</span>
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -76,19 +82,31 @@ export function AboutHero(): JSX.Element {
           </div>
 
           <div className="flex items-center gap-6 pt-4">
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Github className="h-5 w-5" />
               <span className="sr-only">Github</span>
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Mail className="h-5 w-5" />
               <span className="sr-only">Email</span>
             </Link>
@@ -96,5 +114,5 @@ export function AboutHero(): JSX.Element {
         </div>
       </div>
     </section>
-  )
+  );
 }

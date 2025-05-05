@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC } from "react";
 
 export const ExperienceSection: FC = () => {
   return (
@@ -8,16 +8,18 @@ export const ExperienceSection: FC = () => {
         <li>
           <h3 className="font-semibold">Frontend Developer @ GlobalTech</h3>
           <p className="text-gray-600">
-            2020–Present — Built scalable UIs for international clients using React/Next.js.
+            2020–Present — Built scalable UIs for international clients using
+            React/Next.js.
           </p>
         </li>
         <li>
           <h3 className="font-semibold">Designer @ Freelance</h3>
           <p className="text-gray-600">
-            2017–2020 — Delivered design and development for startups and small businesses.
+            2017–2020 — Delivered design and development for startups and small
+            businesses.
           </p>
         </li>
       </ul>
     </section>
-  )
-}
+  );
+};

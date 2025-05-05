@@ -1,12 +1,12 @@
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/elements"
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/elements";
 
 type ContactFormProps = {
-  title: string
-  description: string
-  buttonLabel?: string
-  className?: string
-}
+  title: string;
+  description: string;
+  buttonLabel?: string;
+  className?: string;
+};
 
 export function ContactForm({
   title,
@@ -64,5 +64,5 @@ export function ContactForm({
         </form>
       </div>
     </section>
-  )
+  );
 }

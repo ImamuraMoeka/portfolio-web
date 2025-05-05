@@ -1,6 +1,6 @@
-import { FC } from "react"
-import Link from "next/link"
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { FC } from "react";
+import Link from "next/link";
+import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 export const Footer: FC = () => {
   return (
@@ -17,19 +17,31 @@ export const Footer: FC = () => {
           </div>
 
           <div className="flex items-center gap-6 mt-6 md:mt-0">
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Github className="h-5 w-5" />
               <span className="sr-only">Github</span>
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Mail className="h-5 w-5" />
               <span className="sr-only">Email</span>
             </Link>
@@ -37,5 +49,5 @@ export const Footer: FC = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};

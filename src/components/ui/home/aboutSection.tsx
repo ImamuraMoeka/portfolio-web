@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/elements"
-import { FC } from "react"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/elements";
+import { FC } from "react";
 
 export const AboutSection: FC = () => {
   return (
@@ -30,15 +30,16 @@ export const AboutSection: FC = () => {
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
           <p className="text-gray-600">
-            Hello! I&apos;m a freelance frontend developer with a passion for creating beautiful,
-            functional websites. My cheerful and energetic personality, combined with my curiosity
-            and eagerness to take on new challenges, makes me a great collaborator for your next
-            project.
+            Hello! I&apos;m a freelance frontend developer with a passion for
+            creating beautiful, functional websites. My cheerful and energetic
+            personality, combined with my curiosity and eagerness to take on new
+            challenges, makes me a great collaborator for your next project.
           </p>
           <p className="text-gray-600">
-            As a digital nomad, I&apos;ve had the opportunity to work from various countries around the
-            world, which has given me a unique perspective and approach to problem-solving. I bring
-            this global mindset to every project I work on.
+            As a digital nomad, I&apos;ve had the opportunity to work from
+            various countries around the world, which has given me a unique
+            perspective and approach to problem-solving. I bring this global
+            mindset to every project I work on.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -68,5 +69,5 @@ export const AboutSection: FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

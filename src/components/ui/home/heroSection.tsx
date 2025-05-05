@@ -1,6 +1,6 @@
-import { FC } from "react"
-import Image from "next/image"
-import NextLink from "next/link"
+import { FC } from "react";
+import Image from "next/image";
+import NextLink from "next/link";
 import {
   ArrowRight,
   ArrowDown,
@@ -9,8 +9,8 @@ import {
   Linkedin,
   Twitter,
   Mail,
-} from "lucide-react"
-import { Button } from "@/components/ui/elements"
+} from "lucide-react";
+import { Button } from "@/components/ui/elements";
 
 export const HeroSection: FC = () => {
   return (
@@ -32,8 +32,9 @@ export const HeroSection: FC = () => {
             Freelance Frontend Developer
           </h1>
           <p className="text-gray-600 text-lg">
-            I&apos;m a cheerful and energetic developer with a passion for creating beautiful,
-            functional websites. As a digital nomad, I bring a global perspective to every project.
+            I&apos;m a cheerful and energetic developer with a passion for
+            creating beautiful, functional websites. As a digital nomad, I bring
+            a global perspective to every project.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg">
@@ -45,19 +46,31 @@ export const HeroSection: FC = () => {
             </Button>
           </div>
           <div className="flex items-center gap-6 pt-4">
-            <NextLink href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <NextLink
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Github className="h-5 w-5" />
               <span className="sr-only">Github</span>
             </NextLink>
-            <NextLink href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <NextLink
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </NextLink>
-            <NextLink href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <NextLink
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </NextLink>
-            <NextLink href="#" className="text-gray-600 hover:text-rose-500 transition-colors">
+            <NextLink
+              href="#"
+              className="text-gray-600 hover:text-rose-500 transition-colors"
+            >
               <Mail className="h-5 w-5" />
               <span className="sr-only">Email</span>
             </NextLink>
@@ -82,5 +95,5 @@ export const HeroSection: FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

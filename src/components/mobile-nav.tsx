@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Menu } from "lucide-react"
-import { Button } from "@/components/ui/elements"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/elements"
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/elements";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/elements";
 
 export function MobileNav() {
   return (
@@ -17,24 +17,39 @@ export function MobileNav() {
         </SheetTrigger>
         <SheetContent side="right">
           <nav className="flex flex-col gap-4 mt-8">
-            <Link href="#home" className="text-lg font-medium hover:text-rose-500 transition-colors">
+            <Link
+              href="#home"
+              className="text-lg font-medium hover:text-rose-500 transition-colors"
+            >
               Home
             </Link>
-            <Link href="#about" className="text-lg font-medium hover:text-rose-500 transition-colors">
+            <Link
+              href="#about"
+              className="text-lg font-medium hover:text-rose-500 transition-colors"
+            >
               About
             </Link>
-            <Link href="#portfolio" className="text-lg font-medium hover:text-rose-500 transition-colors">
+            <Link
+              href="#portfolio"
+              className="text-lg font-medium hover:text-rose-500 transition-colors"
+            >
               Portfolio
             </Link>
-            <Link href="#blog" className="text-lg font-medium hover:text-rose-500 transition-colors">
+            <Link
+              href="#blog"
+              className="text-lg font-medium hover:text-rose-500 transition-colors"
+            >
               Blog
             </Link>
-            <Link href="#contact" className="text-lg font-medium hover:text-rose-500 transition-colors">
+            <Link
+              href="#contact"
+              className="text-lg font-medium hover:text-rose-500 transition-colors"
+            >
               Contact
             </Link>
           </nav>
         </SheetContent>
       </Sheet>
     </div>
-  )
+  );
 }

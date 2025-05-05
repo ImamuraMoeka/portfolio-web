@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC } from "react";
 
 export const StatsSection: FC = () => {
   return (
@@ -22,5 +22,5 @@ export const StatsSection: FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

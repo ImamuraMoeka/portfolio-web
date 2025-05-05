@@ -1,25 +1,25 @@
-import { FC } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/elements"
+import { FC } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/elements";
 
 export const BlogSection: FC = () => {
-  const cities = ["Bali", "Tokyo", "Barcelona"]
+  const cities = ["Bali", "Tokyo", "Barcelona"];
 
   return (
     <section id="blog" className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold">From My Blog</h2>
         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-          Follow my journey as a digital nomad and developer. I share insights, tips, and stories from around the
-          world.
+          Follow my journey as a digital nomad and developer. I share insights,
+          tips, and stories from around the world.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[1, 2, 3].map((item) => {
-          const city = cities[item - 1]
+          const city = cities[item - 1];
           return (
             <div
               key={item}
@@ -35,10 +35,15 @@ export const BlogSection: FC = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="text-sm text-rose-500 mb-2">May {item}, 2023</div>
-                <h3 className="text-xl font-bold mb-2">Working Remotely from {city}</h3>
+                <div className="text-sm text-rose-500 mb-2">
+                  May {item}, 2023
+                </div>
+                <h3 className="text-xl font-bold mb-2">
+                  Working Remotely from {city}
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  Tips and experiences from my time working as a digital nomad in {city}.
+                  Tips and experiences from my time working as a digital nomad
+                  in {city}.
                 </p>
                 <Link
                   href="#"
@@ -48,7 +53,7 @@ export const BlogSection: FC = () => {
                 </Link>
               </div>
             </div>
-          )
+          );
         })}
       </div>
 
@@ -58,5 +63,5 @@ export const BlogSection: FC = () => {
         </Button>
       </div>
     </section>
-  )
-}
+  );
+};

@@ -1,7 +1,4 @@
-import {
-  Header,
-  Footer,
-} from "@/components/ui/layout"
+import { Header, Footer } from "@/components/ui/layout";
 
 import {
   HeroSection,
@@ -9,8 +6,8 @@ import {
   PortfolioSection,
   AboutSection,
   BlogSection,
-  ContactSection
-} from "@/components/ui/home"
+  ContactSection,
+} from "@/components/ui/home";
 
 export default function HomePage() {
   return (
@@ -24,5 +21,5 @@ export default function HomePage() {
       <ContactSection />
       <Footer />
     </>
-  )
+  );
 }

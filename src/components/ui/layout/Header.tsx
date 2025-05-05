@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { FC } from "react"
-import Link from "next/link"
-import { Menu } from "lucide-react"
-import { Button } from "@/components/ui/elements"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/elements"
+import { FC } from "react";
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/elements";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/elements";
 
 export const Header: FC = () => {
   return (
@@ -24,19 +24,34 @@ export const Header: FC = () => {
           </SheetTrigger>
           <SheetContent side="right">
             <nav className="flex flex-col gap-4 mt-8">
-              <Link href="/" className="text-lg font-medium hover:text-rose-500 transition-colors">
+              <Link
+                href="/"
+                className="text-lg font-medium hover:text-rose-500 transition-colors"
+              >
                 Home
               </Link>
-              <Link href="/about" className="text-lg font-medium hover:text-rose-500 transition-colors">
+              <Link
+                href="/about"
+                className="text-lg font-medium hover:text-rose-500 transition-colors"
+              >
                 About
               </Link>
-              <Link href="#portfolio" className="text-lg font-medium hover:text-rose-500 transition-colors">
+              <Link
+                href="#portfolio"
+                className="text-lg font-medium hover:text-rose-500 transition-colors"
+              >
                 Portfolio
               </Link>
-              <Link href="#blog" className="text-lg font-medium hover:text-rose-500 transition-colors">
+              <Link
+                href="#blog"
+                className="text-lg font-medium hover:text-rose-500 transition-colors"
+              >
                 Blog
               </Link>
-              <Link href="#contact" className="text-lg font-medium hover:text-rose-500 transition-colors">
+              <Link
+                href="#contact"
+                className="text-lg font-medium hover:text-rose-500 transition-colors"
+              >
                 Contact
               </Link>
             </nav>
@@ -45,23 +60,38 @@ export const Header: FC = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/" className="font-medium hover:text-rose-500 transition-colors">
+          <Link
+            href="/"
+            className="font-medium hover:text-rose-500 transition-colors"
+          >
             Home
           </Link>
-          <Link href="/about" className="font-medium hover:text-rose-500 transition-colors">
+          <Link
+            href="/about"
+            className="font-medium hover:text-rose-500 transition-colors"
+          >
             About
           </Link>
-          <Link href="#portfolio" className="font-medium hover:text-rose-500 transition-colors">
+          <Link
+            href="#portfolio"
+            className="font-medium hover:text-rose-500 transition-colors"
+          >
             Portfolio
           </Link>
-          <Link href="#blog" className="font-medium hover:text-rose-500 transition-colors">
+          <Link
+            href="#blog"
+            className="font-medium hover:text-rose-500 transition-colors"
+          >
             Blog
           </Link>
-          <Link href="#contact" className="font-medium hover:text-rose-500 transition-colors">
+          <Link
+            href="#contact"
+            className="font-medium hover:text-rose-500 transition-colors"
+          >
             Contact
           </Link>
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};

@@ -1,5 +1,5 @@
-import { FC } from "react"
-import { Progress } from "@/components/ui/elements/progress"
+import { FC } from "react";
+import { Progress } from "@/components/ui/elements/progress";
 
 export const SkillsTab: FC = () => {
   const technicalSkills: { name: string; level: number }[] = [
@@ -9,13 +9,13 @@ export const SkillsTab: FC = () => {
     { name: "TypeScript", level: 80 },
     { name: "Node.js", level: 75 },
     { name: "UI/UX Design", level: 70 },
-  ]
+  ];
 
   const languages: { name: string; level: number }[] = [
     { name: "English", level: 10 },
     { name: "Japanese", level: 100 },
     { name: "Spanish", level: 40 },
-  ]
+  ];
 
   const tools: string[] = [
     "VS Code",
@@ -26,7 +26,7 @@ export const SkillsTab: FC = () => {
     "Jira",
     "Slack",
     "Notion",
-  ]
+  ];
 
   return (
     <div className="space-y-8">
@@ -77,5 +77,5 @@ export const SkillsTab: FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
